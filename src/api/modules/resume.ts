@@ -51,15 +51,24 @@ export async function setExportCount() {
   })
 }
 
+// export async function getTemplateCondition() {
+//   const res = await fetch(`${UPSTASH_BASE_URL}/get/templateData`, {
+//     headers: {
+//       Authorization: import.meta.env.VITE_UPSTASH_GET_TOKEN as string
+//     }
+//   })
+//   return await res.json()
+// }
+
+// http://localhost:10088/api/v1/resume/template
 export async function getTemplateCondition() {
-  const res = await fetch(`${UPSTASH_BASE_URL}/get/templateData`, {
+  const res = await fetch(`http://localhost:10088/api/v1/resume/template`, {
     headers: {
       Authorization: import.meta.env.VITE_UPSTASH_GET_TOKEN as string
     }
   })
   return await res.json()
 }
-
 export async function setTemplateCondition(params: { name: string }) {
   let data,
     templateData: { [key: string]: string } = {}
