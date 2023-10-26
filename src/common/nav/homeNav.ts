@@ -13,12 +13,12 @@ const homeNav = [
     name: '语法助手',
     path: '/syntax/helper',
     tooltip: false
-  },
-  {
-    name: '更新记录',
-    path: '/update/line',
-    tooltip: false
   }
+  // {
+  //   name: '更新记录',
+  //   path: '/update/line',
+  //   tooltip: false
+  // }
 ]
 
 const homeOutNav = [
@@ -34,4 +34,5 @@ const homeOutNav = [
     color: '#d90013'
   }
 ]
-export { homeNav, homeOutNav }
+// export { homeNav, homeOutNav }
+export { homeNav }

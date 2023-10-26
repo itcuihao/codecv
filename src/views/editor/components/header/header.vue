@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import navMenu from './nav.vue'
 import Reward from '@/components/reward.vue'
-import ThemeToggle from '@/components/themeToggle.vue'
-import { wOpen } from '@/utils'
+// import ThemeToggle from '@/components/themeToggle.vue'
+// import { wOpen } from '@/utils'
 import { useSwitch } from '@/common/global'
 import { useFile } from './hook'
 import Contact from '@/components/contact.vue'
@@ -36,7 +36,7 @@ const { open, toggle } = useSwitch()
     <Reward />
     <button class="exporter server-export btn" @click="exportFile('dynamic')">导出PDF</button>
     <button class="exporter local-export btn" @click="exportFile('native')">备用导出</button>
-    <div class="operator">
+    <!-- <div class="operator">
       <el-tooltip content="给项目贡献代码" placement="bottom-end">
         <i
           class="iconfont icon-github github font-25"
@@ -47,7 +47,7 @@ const { open, toggle } = useSwitch()
         <i class="iconfont icon-comment problem font-25" @click="toggle"></i>
       </el-tooltip>
       <theme-toggle />
-    </div>
+    </div> -->
   </div>
   <Contact :open="open" @toggle="toggle" />
 </template>
