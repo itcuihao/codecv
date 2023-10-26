@@ -19,6 +19,19 @@ export async function resumeExport(data: IResumeConfig) {
   return await res.json()
 }
 
+export async function resumeExportPDF(data: IResumeConfig) {
+  console.log(`1234567`)
+  console.log(data)
+  const res = await fetch(`http://localhost:10088/api/v1/resume/export_pdf`, {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  return await res.json()
+}
+
 export function getExportCount() {
   return new Promise((resolve, reject) => {
     fetch(`${UPSTASH_BASE_URL}/get/count`, {

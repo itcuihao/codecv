@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Header from './header/header.vue'
-import Footer from './footer.vue'
+// import Footer from './footer.vue'
 </script>
 
 <template>
@@ -18,7 +18,7 @@ import Footer from './footer.vue'
       </keep-alive>
     </router-view>
   </div>
-  <Footer v-if="!['/editor'].includes($route.path)" />
+  <!-- <Footer v-if="!['/editor'].includes($route.path)" /> -->
 </template>
 
 <style lang="scss" scoped>

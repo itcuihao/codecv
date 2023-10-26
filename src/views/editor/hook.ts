@@ -8,7 +8,7 @@ import { download, downloadOfBuffer, importCSS, isDev, queryDOM, useLoading } fr
 import { ensureEmptyPreWhiteSpace, splitPage } from './components/tabbar/hook'
 import useEditorStore from '@/store/modules/editor'
 import { convertDOM } from '@/utils/moduleCombine'
-import { resumeExport } from '@/api/modules/resume'
+import { resumeExportPDF } from '@/api/modules/resume'
 import {
   CUSTOM_CSS_STYLE,
   CUSTOM_MARKDOWN_PRIMARY_COLOR,
@@ -91,6 +91,7 @@ export function useDownLoad(type: Ref<string>) {
       style = await importCSS(type.value)
     } else {
       const linkStyle = document.querySelector('link[href*="/css/style"]') as HTMLLinkElement
+      console.log(linkStyle)
       linkURL = linkStyle?.href || 'none'
     }
     // 处理自定义生成的样式
@@ -109,13 +110,14 @@ export function useDownLoad(type: Ref<string>) {
     !isPDF && ensureEmptyPreWhiteSpace(content)
     showLoading('正在导出请耐心等待...')
     try {
-      const pdfData = await resumeExport({
+      const pdfData = await resumeExportPDF({
         content: content.outerHTML,
         style,
         link,
         name: type.value,
         type: isPDF ? 0 : 1
       })
+      console.log(pdfData)
       const buffer = isPDF ? pdfData.pdf.data : pdfData.picture.data
       const _fileName = (fileName || document.title) + (isPDF ? '.pdf' : '.png')
       const fileType = 'application/' + isPDF ? 'pdf' : 'png'
