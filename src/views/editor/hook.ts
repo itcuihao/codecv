@@ -117,10 +117,23 @@ export function useDownLoad(type: Ref<string>) {
         name: type.value,
         type: isPDF ? 0 : 1
       })
+      console.log(isPDF)
       console.log(pdfData)
-      const buffer = isPDF ? pdfData.pdf.data : pdfData.picture.data
+      const bufferBase64 = isPDF ? pdfData.pdf.data : pdfData.picture.data
+      console.log(bufferBase64)
       const _fileName = (fileName || document.title) + (isPDF ? '.pdf' : '.png')
-      const fileType = 'application/' + isPDF ? 'pdf' : 'png'
+      console.log(_fileName)
+      // const fileType = 'application/' + isPDF ? 'pdf' : 'png'
+      const fileType = 'application/pdf'
+      console.log(fileType)
+      // const buffer = Buffer.from(base64Data, 'base64');
+      // base64转换为Uint8Array
+      const binary = atob(bufferBase64)
+      const len = binary.length
+      const buffer = new Uint8Array(len)
+      for (let i = 0; i < len; i++) {
+        buffer[i] = binary.charCodeAt(i)
+      }
       downloadOfBuffer(buffer, _fileName, fileType)
       successMessage('导出成功～')
     } catch (e: any) {

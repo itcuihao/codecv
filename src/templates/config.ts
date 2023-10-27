@@ -27,8 +27,74 @@ export const templates = ref<SubModule[]>([])
 
 export const modulesData: SubModule[] = [
   {
-    type: '5graduation_reexam',
+    type: '20campus_simple',
     id: 1,
+    name: '简约/通用/校招/社招',
+    font: 'Noto Serif SC',
+    lineHeight: 20,
+    content: `::: headStart
+# 小C - 工程师
+icon:user 男 / 2000.01.01 &nbsp;/ &nbsp;icon:phone 155xxxxxx06 &nbsp; /&nbsp; icon:email xxxxxxxx@163.com
+icon:github [github.com](https://github.com/)&nbsp;icon:gitee [gitee.com](https://gitee.com)&nbsp;icon:juejin [juejin.cn](https://juejin.cn)
+::: headEnd
+
+## 教育背景
+::: start
+**xxxx大学**
+:::
+信息管理学院 - 计算机科学与技术 - GPA 4.0
+:::
+**2019.09 - 2023.07**
+::: end
+
+## 专业技能
+- **基础**：熟悉 JavaScript、ES6+ 语法，如 Promise、Async/Await 等，对常见的设计模式和数据结构与算法，如 链表、树、图论等都比较熟悉，并能根据实际应用场景对功能做优化
+- **框架**：熟悉 Vue.js、React.js 并对其源码有过阅读，深入理解 Vue.js 相关技术栈，并能在项目中进行实际应用
+- **网络**：熟悉计算机网络相关知识，如 TCP/IP、UDP、HTTP、HTTPS、DNS 协议等
+- **工程化**：熟悉前端工程化，能使用 Vite、Webpack 对项目进行配置，并具有一定的构建优化实践
+- **服务端**：了解 Node.js 及其生态，如 Express，Nest，并有过相关项目实践
+- **数据库**：了解 MySQL、Mongodb、Redis 的基本使用，并结合 Sequelize 有过相关项目实践
+
+## 实习经历
+::: start
+**icon:alibaba xxxx - xx - 开发实习生**
+:::
+**2022.01 - 2023.09**
+::: end
+
+- **技术栈**：\`xxx\` \`xxx\` \`sxxx\`
+- **工作内容**：xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+::: start
+**icon:bytedance  xxxx - xx - 开发实习生**
+:::
+**2022.02 - 2022.06**
+::: end
+
+- **技术栈**：\`xxx\` \`xx\` \`xxxx\`
+- **工作内容**：xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+## 开源作品
+::: start
+#### icon:github  code&nbsp;&nbsp;icon:star 0+
+:::
+**2022.09 - 至今**
+::: end
+- **工具介绍**：这是一款可高度扩展的 markdown 简历制作工具，它可以将你编写的 markdown 内容转换为 PDF，支持多种模板，内置两种编辑模式，Markdown 模式和内容模式数据同步无缝切换
+- **代码仓库**：[https://github.com](https://github.com)
+- **线上演示**：[https://github.com](https://github.com)
+
+
+## 自我评价
+自驱力强，对大前端有浓厚的兴趣，持续关注前端领域新玩具/新特性并投入项目使用，保持持续学习的心态`,
+    primaryColor: '#140505',
+    primaryBackground: '#140B25',
+    img: 'https://s1.imagehub.cc/images/2023/08/10/20.png',
+    hot: 666
+  },
+  {
+    type: '5graduation_reexam',
+    id: 2,
     name: '研究生复试',
     font: 'Noto Serif SC',
     lineHeight: 20,
@@ -94,7 +160,7 @@ xxxx年xx月 - xxxx年xx月
 ## icon:technology 个人技能
 - xxxxxxxxxxxxxxxxxxxx
 `,
-    primaryColor: '#333',
+    primaryColor: '#3A3939',
     primaryBackground: '#2186D2',
     img: 'https://s1.imagehub.cc/images/2023/08/10/5ef200ce07ec45bcb.png'
   },
@@ -180,10 +246,84 @@ https://github.com/acmenlei/markdown-plus
 自行发挥吧。。。
 ## 致谢
 感谢您阅读我的简历，期待与您一起共事。`,
-    primaryColor: '#333',
-    primaryBackground: '#2186D2',
+    primaryColor: '#544F4F',
+    primaryBackground: '#1CAAB0',
     img: 'https://s1.imagehub.cc/images/2023/08/10/19.png',
     hot: 100
+  },
+  {
+    type: '5english',
+    id: 5,
+    name: '英语/简约',
+    content: `::: headStart
+# CodeCV XiaoC (Jack)
+(+86) 123-456-7890 | coderleilei@163.com | 18th floor, CodeCV Bid, Beijing
+::: headEnd
+
+## EDUCATION
+::: start
+#### Columbia University
+*Bachelor of Arts in Economics*
+- GPA: 3.8/4.0 (Top 10%)
+- Honors/Awards: Student Marshall, XXX Scholarship (Top 15% of Department)
+:::
+*Sep 2014 - Jun 2018*
+*Now York*
+::: end
+
+## PROFESSIONAL EXPERIENCE
+::: start
+#### CodeCV Investment Bank
+*intern, investmon saner Dooarmient*
+:::
+*Jun 2017 - Aug 2017*
+*Beijing*
+::: end
+- Completed 61-page X Industry Research Report independently by obtaining necessary information from various sources including WIND, annual reports of listed companies and the issuer rating reports, etc
+- Put together an 8-page credit evaluation report of X in 2015 independently through using Wind to obtain required data and reorganizing and analyzing the credit rating report of city investment debt of X in 2015 and was submitted to the customer directly
+- Investigated the IPO of X, including updating the offering circulars, collecting and analyzing the transaction structure, main businesses, financial information and group structure of the company: independently completed a 16-page summary report in both Chinese and English
+
+::: start
+#### CodeCV Consulting & Co.
+*Summer Analyst, Capital Department*
+:::
+*Jun 2016 - Sop 2016*
+*Hong Kong*
+::: end
+- Conducted research of competitors, and keep dynamic observation; identified and conducted comparative analysis of model competitor cases
+- Analyzed X market and predicted market trend, provided research reports for company executives
+- implemented promotion strategy formulation and implementation; planed and managed marketing budget
+
+::: start
+#### CodeCV Accounting Firm
+*Summer Intern*
+:::
+*Jun 2015 - Sop 2015*
+*Now York*
+::: end
+- Accountable for the integrity of financial statements to the bonding company and management
+- Analyzed and maintained an adequate system of accounting records and a comprehensive set of controls designed to mitigate risk
+- Enhanced the accuracy of the company's reported financial results and ensured that results comply with generally accepted accounting principles (GAAP)
+
+## LEADERSHIP EXPERIENCE
+::: start
+#### CodeCV Invostmont Cluh
+*President, Co-Founder*
+:::
+*Oct 2016 - Present*
+*Now York*
+::: end
+- Co-founded a student-run fund to invest a small portion of the University's endowment
+- Managed a $105k diversified, mid-cap equities fund - Outperformed benchmark by 4% since 2010
+
+## MISCELLANEOUS
+- **Languages**: English (Fluent). Mandarin Chinese (Native), French (Conversational)
+- **Skills**: Bloomberg. Excel (Proficient), PPT (Proficient), HTML/CSS (Basic)
+- **Interests**: Violin (Gr. 10). Website (coderlei.netlify.app)`,
+    primaryColor: '#544F4F',
+    primaryBackground: '#1CAAB0',
+    img: 'https://s1.imagehub.cc/images/2023/08/10/24.png',
+    hot: 9
   }
 ]
 

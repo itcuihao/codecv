@@ -18,8 +18,13 @@ export function download(url: string, fileName: string) {
 }
 
 export function downloadOfBuffer(buffer: Iterable<number>, fileName: string, type: string) {
+  console.log('downloadOfBuffer')
+  console.log(buffer)
+  console.log(type)
   const blob = new Blob([new Uint8Array(buffer)], { type })
+  console.log(blob)
   const url = URL.createObjectURL(blob)
+  console.log(url)
   download(url, fileName)
   URL.revokeObjectURL(url)
 }

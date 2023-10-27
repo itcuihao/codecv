@@ -15,7 +15,7 @@ const { flag, close } = useNotification()
 <template>
   <div class="resume-container flex">
     <div class="resume-left-container content-card" data-aos="fade-right">
-      <NavBar button="创作模板" :tabs="templateCategory" @tab-click="queryCategory" />
+      <NavBar button="创作简历" :tabs="templateCategory" @tab-click="queryCategory" />
       <div class="resume-card-container" v-if="data.length">
         <resume-card v-for="theme in data" :key="theme.id" :theme="theme" />
       </div>
