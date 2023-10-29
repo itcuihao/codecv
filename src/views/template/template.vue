@@ -45,11 +45,9 @@ const { flag, close } = useNotification()
       <div class="resume-notification content-card">
         <strong>公告</strong>
         <p>
-          如果你觉得项目对你有所帮助，请考虑为
-          <a href="https://github.com/acmenlei/codecv" target="_blank">项目</a>
-          点一个 <i class="iconfont icon-star"></i>，若遇到 BUG 请通过底部微信/
-          <a href="https://github.com/acmenlei/codecv/issues" target="_blank">issues</a>
-          描述并复现你所遇到的问题，良好的用户体验需要大家一起来构建，感谢大家的支持～🙏
+          <i class="iconfont icon-star"></i>
+          本项目业余时间制作，若遇到 BUG 请通过右上部微信反馈，
+          描述并复现你所遇到的问题，感谢支持～🙏
         </p>
       </div>
     </div>
@@ -57,34 +55,17 @@ const { flag, close } = useNotification()
   <ToastModal :flag="flag" @close="close">
     <h3 style="margin-bottom: 10px">通知</h3>
     <p style="line-height: 27px">
-      近期反应同学较多，发个通知告知一下，此网址为备用网址，若需体验更多功能请前往主站<del
-        style="color: var(--theme)"
-        ><a
-          target="_blank"
-          href="https://codecv.top"
-          style="color: var(--theme); text-decoration: none"
-        >
-          https://codecv.top</a
-        ></del
-      >(主站正在备案，大概一周左右恢复使用)，可访问临时地址<a
-        target="_blank"
-        href="https://wuxiancv.com"
-        style="color: var(--theme); text-decoration: none"
-      >
-        https://wuxiancv.com</a
-      >
+      大家合理使用，认真对待简历，愿打工人都有份好工作，你所拥有的仅仅是你的过去。加油！
     </p>
     <ol class="" style="margin: 10px 0; padding-left: 20px; line-height: 28px">
-      <li>🌈 主站导出文件更稳定</li>
-      <li>✍🏻 编写体验更好</li>
-      <li>✨ 工具更加完善</li>
-      <li>☁️ 数据云端实时保存</li>
+      <li>🌈 后端导出文件更稳定</li>
+      <li>✍🏻 编写体验良好</li>
     </ol>
     <p>若不需要请直接忽略，谢谢配合!</p>
     <br />
     <div class="flex group">
-      <img src="@/assets/img/wechat_group.png" style="width: 30%" />
-      <h4>加入群聊获取最新情报，兄弟萌速速来水群 ✌🏻</h4>
+      <img src="@/assets/img/wechat_group.jpg" style="width: 30%" />
+      <h4>关注公众号获取最新情报 ✌🏻</h4>
     </div>
     <p style="text-align: center; margin-top: 20px">
       <button class="primary btn" @click="close">知道了</button>

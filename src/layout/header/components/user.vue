@@ -17,7 +17,9 @@ import {
   useMessage
 } from '../hook'
 import { useNotificationList } from '@/components/comment-reply-msg/hook'
+import { useSwitch } from '@/common/global'
 
+const { open, toggle } = useSwitch()
 const router = useRouter()
 const { user, login, logout } = useUserLogin()
 const { infoModel, setInfoModel } = useUpdateInfoModel()
@@ -32,7 +34,13 @@ const { data, total, commentTotal, readNotification, pageNumChange } =
 
 <template>
   <div class="user" data-aos="slide-left">
-    <theme-toggle />
+    <div class="operator">
+      <el-tooltip content="问题反馈" placement="bottom-end">
+        <i class="iconfont icon-comment problem font-25" @click="toggle"></i>
+      </el-tooltip>
+      &nbsp;
+      <theme-toggle />
+    </div>
     <template v-if="loginState.logined">
       <div
         class="user-creative mr-20 pointer primary"
@@ -70,6 +78,7 @@ const { data, total, commentTotal, readNotification, pageNumChange } =
     </template>
     <span v-else class="pointer" @click="loginModelToggle"><!-- 登录 --></span>
   </div>
+  <Contact :open="open" @toggle="toggle" />
   <!-- 个人信息修改 -->
   <toast-modal v-if="infoModel" width="400px" :flag="infoModel" @close="setInfoModel">
     <Profile @cancel="setInfoModel" @submit="updateInfo" />

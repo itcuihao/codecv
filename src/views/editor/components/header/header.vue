@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import navMenu from './nav.vue'
 import Reward from '@/components/reward.vue'
-// import ThemeToggle from '@/components/themeToggle.vue'
+import ThemeToggle from '@/components/themeToggle.vue'
 // import { wOpen } from '@/utils'
 import { useSwitch } from '@/common/global'
 import { useFile } from './hook'
@@ -18,6 +18,11 @@ const emit = defineEmits([
 
 const { exportFile, importFile, fileName } = useFile(emit)
 const { open, toggle } = useSwitch()
+
+const showImage = () => {
+  const imageUrl = 'https://img.erpweb.eu.org/imgs/2023/10/d5958b76eb6f62b1.png'
+  window.open(imageUrl, '_blank')
+}
 </script>
 
 <template>
@@ -37,14 +42,11 @@ const { open, toggle } = useSwitch()
     <button class="exporter server-export btn" @click="exportFile('dynamic')">导出PDF</button>
     <button class="exporter local-export btn" @click="exportFile('native')">备用导出</button>
     <div class="operator">
-      <!-- <el-tooltip content="给项目贡献代码" placement="bottom-end">
-        <i
-          class="iconfont icon-github github font-25"
-          @click="wOpen('https://github.com/acmenlei/markdown-resume-to-pdf')"
-        ></i>
-      </el-tooltip> -->
       <el-tooltip content="问题反馈" placement="bottom-end">
-        <i class="iconfont icon-comment problem font-25" @click="toggle"></i>
+        <i class="iconfont icon-wechat problem font-25" @click="toggle"></i>
+      </el-tooltip>
+      <el-tooltip content="QQ群" placement="bottom-end">
+        <i class="iconfont icon-tencentqq problem font-25" @click="showImage"></i>
       </el-tooltip>
       <theme-toggle />
     </div>

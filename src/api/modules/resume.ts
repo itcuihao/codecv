@@ -20,9 +20,7 @@ export async function resumeExport(data: IResumeConfig) {
 }
 
 export async function resumeExportPDF(data: IResumeConfig) {
-  console.log(`1234567`)
-  console.log(data)
-  const res = await fetch(`http://localhost:10088/api/v1/resume/export_pdf`, {
+  const res = await fetch(`${UPSTASH_BASE_URL}/api/v1/resume/export_pdf`, {
     method: 'POST',
     body: JSON.stringify(data),
     headers: {
@@ -34,7 +32,7 @@ export async function resumeExportPDF(data: IResumeConfig) {
 
 export function getExportCount() {
   return new Promise((resolve, reject) => {
-    fetch(`${UPSTASH_BASE_URL}/get/count`, {
+    fetch(`${UPSTASH_BASE_URL}/api/v1/resume/export_count`, {
       headers: {
         Authorization: import.meta.env.VITE_UPSTASH_GET_TOKEN as string
       }
@@ -73,9 +71,11 @@ export async function setExportCount() {
 //   return await res.json()
 // }
 
+// const res = await fetch(`http://localhost:10088/api/v1/resume/template`, {
+
 // http://localhost:10088/api/v1/resume/template
 export async function getTemplateCondition() {
-  const res = await fetch(`http://localhost:10088/api/v1/resume/template`, {
+  const res = await fetch(`${UPSTASH_BASE_URL}/api/v1/resume/template`, {
     headers: {
       Authorization: import.meta.env.VITE_UPSTASH_GET_TOKEN as string
     }

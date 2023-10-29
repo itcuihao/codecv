@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Logo from '@/components/logo.vue'
+// import Logo from '@/components/logo.vue'
 import User from './components/user.vue'
 import Nav from './components/nav.vue'
 import NavMoblie from './components/navMoblie.vue'
@@ -8,7 +8,7 @@ import NavMoblie from './components/navMoblie.vue'
 <template>
   <div class="header-out noto-serif-sc">
     <div class="header">
-      <Logo />
+      <!-- <Logo /> -->
       <Nav />
       <User />
     </div>

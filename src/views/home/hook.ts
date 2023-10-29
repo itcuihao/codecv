@@ -15,7 +15,7 @@ export function useTypeNet() {
     new TypeNet('.typenet-text', { speed: 10, style: 'font-weight: bold; line-height: 28px' })
       // .type('5分钟', { style: 'font-size: 40px; line-height: 60px; color: #ff7449' })
       .type(' 使用', { style: 'font-size: 40px;line-height: 60px' })
-      .type(' CodeCV ', {
+      .type(' 一份简历 ', {
         style: 'color: #ff7449; font-size: 40px;line-height: 60px'
       })
       .type('快速生成你的优质简历', {
@@ -23,7 +23,7 @@ export function useTypeNet() {
       })
       .line()
       .line()
-      .type('CodeCV 支持你使用 Markdown 语法来编写你的简历，可扩展性极高。且支持双编辑模式，')
+      .type('支持你使用 Markdown 语法来编写你的简历，可扩展性极高。且支持双编辑模式，')
       .type('Markdown模式 ', { style: 'color: #ff7449' })
       .type('以及')
       .type(' 富文本模式 ', { style: 'color: #ff7449' })
@@ -37,7 +37,7 @@ export function usePresentation() {
     init = -30
   let timer: number
 
-  const presentationData = reactive(templates.value.slice(7, 12))
+  const presentationData = reactive(templates.value.slice(0, 4))
   const presentationIndex = ref(0)
   const styleConfig = [
     {
@@ -81,8 +81,8 @@ export function useUserComments() {
   const comments = [
     {
       avatar: avatar1,
-      profession: '阿里巴巴-前端技术专家',
-      content: '使用体验还不错呀，UI 做的确实也蛮好的，小伙子继续加油！'
+      profession: `校招生`,
+      content: `使用体验还不错呀，之前用Word写简历，一直会有各种格式问题，甚至是投出简历后才发现的，现在我只要安心投简历就行了。`
     },
     {
       avatar: avatar2,

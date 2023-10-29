@@ -14,10 +14,10 @@ const { repoStars, createAnimateEffect } = useGiteeRepoStars()
 </script>
 
 <template>
-  <div class="tip">
+  <!-- <div class="tip">
     您正在访问备用网址，请前往主站获取更加完善的功能及简历模板
     <a class="pointer hover" href="https://wuxiancv.com">点击访问</a>
-  </div>
+  </div> -->
   <div id="home">
     <Header />
     <div class="introduce flex flex-space-around flex-align-around flex-align-center noto-serif-sc">
@@ -63,17 +63,16 @@ const { repoStars, createAnimateEffect } = useGiteeRepoStars()
           <sub class="line-1">{{ user.name }}</sub>
         </a>
         <br />
-        <a href="https://gitee.com/codeleilei/markdown2pdf/stargazers" target="_blank">...</a>
+        <!-- <a href="https://gitee.com/codeleilei/markdown2pdf/stargazers" target="_blank">...</a> -->
       </div>
     </div>
 
     <div class="recent-template noto-serif-sc">
       <div class="intro">
         <h1 data-aos="zoom-in">🤩 最新模板</h1>
-        <p class="sub-intro" data-aos="zoom-in">
-          如果你有喜欢的模板在这里没有，记得告诉我哦～
-          等你下次再来的时候就能看到了，你永远可以相信作者的速度！
-        </p>
+        <!-- <p class="sub-intro" data-aos="zoom-in">
+          `如果你有喜欢的模板在这里没有，记得告诉我哦～`
+        </p> -->
       </div>
       <ul class="flex presentation-module">
         <li

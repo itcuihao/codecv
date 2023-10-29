@@ -4,9 +4,17 @@ export default `<h2 style="background:var(--background); color: var(--font-color
 </h2>
 <p style="background:var(--background); color: var(--font-color)">
 <span style="line-height: 28px; color: var(--font-color)"
-  >如果你想编写一款<strong>比较好的简历排版</strong>，那你可以学习一下下面这些语法，放心，不会花费多少时间.</span
+  >如果你想编写一款<strong>比较好的简历排版</strong>，那你可以学习一下下面这些语法，放心，不会花费多少时间。</span
 >
 </p>
+<div>
+<p style="background:var(--background); color: var(--font-color)">
+<span style="line-height: 28px; color: var(--font-color)"
+  >欢迎加入<strong>QQ群</strong>，一起学习语法，商量简历如何书写。</span
+>
+</p>
+<img width="200" src="https://github.com/itcuihao/blog/blob/master/images/yicunjin_qq.png?raw=true" alt="QQ群" />
+</div>
 <h2 style="background:var(--background); color: var(--font-color); margin: 20px 0 10px 0;">
 <span style="color: var(--font-color); background:(--background)">弹性布局</span>
 </h2>
@@ -166,17 +174,5 @@ class="tb-pre"
     "
     >Markdown</code
   ><span style="color: var(--font-color); background:(--background)"
-    >&nbsp;同步，<strong>如果你有不错的想法</strong>，可以向我提出，</span
-  ><code
-    style="
-      font-family: 'Microsoft YaHei Mono', Menlo, Monaco, Consolas, 'Courier New', monospace;
-      color: rgb(229, 61, 14);
-    "
-    >欢迎给这个项目提供不同的简历模板</code
-  ><span style="color: var(--font-color); background:(--background)"
-    >，感谢.&nbsp;<a target="null" href="https://github.com/acmenlei/markdown-resume-to-pdf"
-      >仓库地址</a
-    ></span
-  ></span
->
+    >&nbsp;同步。
 </p>`

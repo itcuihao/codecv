@@ -29,7 +29,7 @@ export const modulesData: SubModule[] = [
   {
     type: '20campus_simple',
     id: 1,
-    name: '简约/通用/校招/社招',
+    name: '简约/互联网/通用',
     font: 'Noto Serif SC',
     lineHeight: 20,
     content: `::: headStart
@@ -90,12 +90,12 @@ icon:github [github.com](https://github.com/)&nbsp;icon:gitee [gitee.com](https:
     primaryColor: '#140505',
     primaryBackground: '#140B25',
     img: 'https://s1.imagehub.cc/images/2023/08/10/20.png',
-    hot: 666
+    hot: '666'
   },
   {
     type: '5graduation_reexam',
     id: 2,
-    name: '研究生复试',
+    name: '校招/事业单位/研究生复试',
     font: 'Noto Serif SC',
     lineHeight: 20,
     content: `::: headStart
@@ -162,16 +162,17 @@ xxxx年xx月 - xxxx年xx月
 `,
     primaryColor: '#3A3939',
     primaryBackground: '#2186D2',
-    img: 'https://s1.imagehub.cc/images/2023/08/10/5ef200ce07ec45bcb.png'
+    img: 'https://s1.imagehub.cc/images/2023/08/10/5ef200ce07ec45bcb.png',
+    hot: '233'
   },
   {
     type: '19social',
-    id: 2,
-    name: '社招/简约',
-    content: `## CodeCV - 前端开发工程师
+    id: 3,
+    name: '简约/社招/互联网',
+    content: `## Resume - 开发工程师
 ::: start
-icon:email **邮箱**：coderleilei@163.com
-icon:phone **电话号码**：15507942706
+icon:email **邮箱**：xxx@163.com
+icon:phone **电话号码**：1234567899
 icon:work **工作经验**：3 年工作经验
 :::
 icon:link **博客**：https://coderlei.netlify.app
@@ -181,7 +182,7 @@ icon:gitee **Gitee**：https://gitee.com/codeleilei
 
 ## 教育背景
 ::: start
-华东师范大学
+xx师范大学
 :::
 计算机科学与技术 / GPA 4.0
 :::
@@ -198,16 +199,16 @@ icon:gitee **Gitee**：https://gitee.com/codeleilei
 
 ## 工作经历
 ::: start
-icon:tencent **腾讯微信事业群**
+icon:tencent **事业群**
 :::
-**前端开发工程师（2021.07 - 2023.05）**
+**开发工程师（2021.07 - 2023.05）**
 ::: end
 负责xx项目的xx模块开发，主导xxx需求的推进，优化首屏加载速度xs，从xs优化至1s，压缩整体生产包体积66%，编写开发模式下清空不属于自己的console语句，提升全组同事的开发效率，得到同事的一致认可
 
 ::: start
 icon:alibaba **阿里巴巴飞猪**
 :::
-**前端开发工程师（2018.07 - 2021.07）**
+**开发工程师（2018.07 - 2021.07）**
 ::: end
 负责xx项目的xx模块开发，主导xxx需求的推进，优化首屏加载速度xs，从xs优化至1s，压缩整体生产包体积66%，编写开发模式下清空不属于自己的console语句，提升全组同事的开发效率，得到同事的一致认可
 
@@ -249,15 +250,15 @@ https://github.com/acmenlei/markdown-plus
     primaryColor: '#544F4F',
     primaryBackground: '#1CAAB0',
     img: 'https://s1.imagehub.cc/images/2023/08/10/19.png',
-    hot: 100
+    hot: '99'
   },
   {
     type: '5english',
-    id: 5,
-    name: '英语/简约',
+    id: 4,
+    name: '简约/英文/通用',
     content: `::: headStart
-# CodeCV XiaoC (Jack)
-(+86) 123-456-7890 | coderleilei@163.com | 18th floor, CodeCV Bid, Beijing
+# Resume CH (Hans)
+(+86) 123-456-7890 | ****@163.com | 18th floor, Bid, Beijing
 ::: headEnd
 
 ## EDUCATION
@@ -284,7 +285,7 @@ https://github.com/acmenlei/markdown-plus
 - Investigated the IPO of X, including updating the offering circulars, collecting and analyzing the transaction structure, main businesses, financial information and group structure of the company: independently completed a 16-page summary report in both Chinese and English
 
 ::: start
-#### CodeCV Consulting & Co.
+#### Code Consulting & Co.
 *Summer Analyst, Capital Department*
 :::
 *Jun 2016 - Sop 2016*
@@ -323,7 +324,7 @@ https://github.com/acmenlei/markdown-plus
     primaryColor: '#544F4F',
     primaryBackground: '#1CAAB0',
     img: 'https://s1.imagehub.cc/images/2023/08/10/24.png',
-    hot: 9
+    hot: '8'
   }
 ]
 
