@@ -206,7 +206,7 @@ icon:tencent **事业群**
 负责xx项目的xx模块开发，主导xxx需求的推进，优化首屏加载速度xs，从xs优化至1s，压缩整体生产包体积66%，编写开发模式下清空不属于自己的console语句，提升全组同事的开发效率，得到同事的一致认可
 
 ::: start
-icon:alibaba **阿里巴巴飞猪**
+icon:alibaba **xxxx**
 :::
 **开发工程师（2018.07 - 2021.07）**
 ::: end
@@ -214,9 +214,9 @@ icon:alibaba **阿里巴巴飞猪**
 
 ## 开源项目
 ::: start
-icon:github  **codecv**
+icon:github  **code**
 :::
-https://github.com/acmenlei/codecv
+https://github.com
 :::
 **2022.09 - 至今**
 ::: end
@@ -225,7 +225,7 @@ https://github.com/acmenlei/codecv
 ::: start
 icon:github  **markdown-plus**
 :::
-https://github.com/acmenlei/markdown-plus
+https://github.com
 :::
 **2022.09 - 至今**
 ::: end
@@ -233,7 +233,7 @@ https://github.com/acmenlei/markdown-plus
 
 ## 项目经历
 ::: start
-**codecv**
+**code**
 :::
 **全栈开发（2022.09 - 至今）**
 ::: end
@@ -274,7 +274,7 @@ https://github.com/acmenlei/markdown-plus
 
 ## PROFESSIONAL EXPERIENCE
 ::: start
-#### CodeCV Investment Bank
+#### Code Investment Bank
 *intern, investmon saner Dooarmient*
 :::
 *Jun 2017 - Aug 2017*
@@ -296,7 +296,7 @@ https://github.com/acmenlei/markdown-plus
 - implemented promotion strategy formulation and implementation; planed and managed marketing budget
 
 ::: start
-#### CodeCV Accounting Firm
+#### Code Accounting Firm
 *Summer Intern*
 :::
 *Jun 2015 - Sop 2015*
@@ -308,7 +308,7 @@ https://github.com/acmenlei/markdown-plus
 
 ## LEADERSHIP EXPERIENCE
 ::: start
-#### CodeCV Invostmont Cluh
+#### Code Invostmont Cluh
 *President, Co-Founder*
 :::
 *Oct 2016 - Present*
