@@ -19,10 +19,10 @@ const emit = defineEmits([
 const { exportFile, importFile, fileName } = useFile(emit)
 const { open, toggle } = useSwitch()
 
-const showImage = () => {
-  const imageUrl = 'https://img.erpweb.eu.org/imgs/2023/10/d5958b76eb6f62b1.png'
-  window.open(imageUrl, '_blank')
-}
+// const showImage = () => {
+//   const imageUrl = 'https://img.erpweb.eu.org/imgs/2023/10/d5958b76eb6f62b1.png'
+//   window.open(imageUrl, '_blank')
+// }
 </script>
 
 <template>
@@ -45,9 +45,9 @@ const showImage = () => {
       <el-tooltip content="问题反馈" placement="bottom-end">
         <i class="iconfont icon-wechat problem font-25" @click="toggle"></i>
       </el-tooltip>
-      <el-tooltip content="QQ群" placement="bottom-end">
+      <!-- <el-tooltip content="QQ群" placement="bottom-end">
         <i class="iconfont icon-tencentqq problem font-25" @click="showImage"></i>
-      </el-tooltip>
+      </el-tooltip> -->
       <theme-toggle />
     </div>
   </div>

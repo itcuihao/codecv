@@ -1,8 +1,9 @@
 <script setup lang="ts">
-// import Logo from '@/components/logo.vue'
+import Logo from '@/components/logo.vue'
 import User from './components/user.vue'
 import Nav from './components/nav.vue'
 import NavMoblie from './components/navMoblie.vue'
+import Reward from '@/components/reward.vue'
 </script>
 
 <template>

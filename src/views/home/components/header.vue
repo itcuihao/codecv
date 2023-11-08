@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { homeNav } from '@/common/nav/homeNav'
+import Reward from '@/components/reward.vue'
 // import { homeNav, homeOutNav } from '@/common/nav/homeNav'
 // import Logo from '@/components/logo.vue'
 import ThemeToggle from '@/components/themeToggle.vue'
@@ -26,6 +27,7 @@ const { open, toggle } = useSwitch()
     </ul>
     <!-- <div class="operator" data-aos="zoom-out-left"> -->
     <div class="operator">
+      <Reward />
       <el-tooltip content="问题反馈" placement="bottom-end">
         <i class="iconfont icon-comment problem font-25" @click="toggle"></i>
       </el-tooltip>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import NavBar from '@/components/navBar.vue'
+import Reward from '@/components/reward.vue'
 import resumeCard from './components/resumeCard.vue'
 import Empty from '@/components/empty.vue'
 import { templateCategory } from './constant'
@@ -15,6 +16,7 @@ const { flag, close } = useNotification()
 <template>
   <div class="resume-container flex">
     <div class="resume-left-container content-card" data-aos="fade-right">
+      <Reward />
       <NavBar button="创作简历" :tabs="templateCategory" @tab-click="queryCategory" />
       <div class="resume-card-container" v-if="data.length">
         <resume-card v-for="theme in data" :key="theme.id" :theme="theme" />
@@ -47,7 +49,7 @@ const { flag, close } = useNotification()
         <p>
           <i class="iconfont icon-star"></i>
           本项目业余时间制作，若遇到 BUG 请通过右上部微信反馈，
-          描述并复现你所遇到的问题，感谢支持～🙏
+          描述并复现你所遇到的问题。如果帮你找到工作也欢迎打赏，感谢支持～🙏
         </p>
       </div>
     </div>
@@ -55,13 +57,13 @@ const { flag, close } = useNotification()
   <ToastModal :flag="flag" @close="close">
     <h3 style="margin-bottom: 10px">通知</h3>
     <p style="line-height: 27px">
-      大家合理使用，认真对待简历，愿打工人都有份好工作，你所拥有的仅仅是你的过去。加油！
+      大家尽情使用，认真修改简历，愿天下打工人都有份好工作，冲鸭，加油！
     </p>
     <ol class="" style="margin: 10px 0; padding-left: 20px; line-height: 28px">
       <li>🌈 后端导出文件更稳定</li>
-      <li>✍🏻 编写体验良好</li>
+      <li>✍🏻 编写体验更加良好</li>
     </ol>
-    <p>若不需要请直接忽略，谢谢配合!</p>
+    <p>请合理使用，谢谢配合!</p>
     <br />
     <div class="flex group">
       <img src="@/assets/img/wechat_group.jpg" style="width: 30%" />
