@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { useDark } from '@vueuse/core'
-import avatar1 from '@/assets/svg/avataaars1.svg'
+// import cv from '@/assets/svg/cv.svg'
 
 const isDark = useDark()
 </script>
 
 <template>
   <div class="logo" @click="$router.replace('/home')" data-aos="slide-right">
-    <!-- <avatar1 /> -->
+    <img src="@/assets/svg/cv8.svg" width="80" height="60" />
   </div>
 </template>
 

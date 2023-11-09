@@ -9,7 +9,7 @@ import Reward from '@/components/reward.vue'
 <template>
   <div class="header-out noto-serif-sc">
     <div class="header">
-      <!-- <Logo /> -->
+      <Logo />
       <Nav />
       <User />
     </div>

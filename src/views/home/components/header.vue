@@ -2,7 +2,7 @@
 import { homeNav } from '@/common/nav/homeNav'
 import Reward from '@/components/reward.vue'
 // import { homeNav, homeOutNav } from '@/common/nav/homeNav'
-// import Logo from '@/components/logo.vue'
+import Logo from '@/components/logo.vue'
 import ThemeToggle from '@/components/themeToggle.vue'
 import { useSwitch } from '@/common/global'
 // function toOutNav(path: string) {
@@ -13,7 +13,7 @@ const { open, toggle } = useSwitch()
 
 <template>
   <div id="header" class="noto-serif-sc">
-    <!-- <Logo /> -->
+    <Logo />
     <ul class="nav" data-aos="zoom-out-right">
       <li v-for="(navItem, idx) in homeNav" :key="idx">
         <router-link v-if="!navItem.tooltip" :to="navItem.path || ''">{{
