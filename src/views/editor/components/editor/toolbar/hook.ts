@@ -360,7 +360,7 @@ export function markdownModeInsertOrderedList() {
 
 export function markdownModeInsertLink() {
   const range = getCurrentRanger()
-  range?.insertNode(createText(`[示例文字](https://github.com/acmenlei)`))
+  range?.insertNode(createText(`[示例文字](https://github.com)`))
 }
 export function markdownModeInsertAvatar() {
   const range = getCurrentRanger()

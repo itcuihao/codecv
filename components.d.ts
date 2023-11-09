@@ -11,7 +11,6 @@ declare module '@vue/runtime-core' {
     Chat: typeof import('./src/components/chat-room/chat.vue')['default']
     Comments: typeof import('./src/components/comments/comments.vue')['default']
     Contact: typeof import('./src/components/contact.vue')['default']
-    copy: typeof import('./src/components/logo copy.vue')['default']
     Crm: typeof import('./src/components/comment-reply-msg/crm.vue')['default']
     ElBacktop: typeof import('element-plus/es')['ElBacktop']
     ElBadge: typeof import('element-plus/es')['ElBadge']

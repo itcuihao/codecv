@@ -7,7 +7,7 @@ const isDark = useDark()
 
 <template>
   <div class="logo" @click="$router.replace('/home')" data-aos="slide-right">
-    <avatar1 />
+    <!-- <avatar1 /> -->
   </div>
 </template>
 

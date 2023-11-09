@@ -1,4 +1,8 @@
 import { ref } from 'vue'
+import rImg20campus_simple from '@/assets/img/20campus_simple.png'
+import rImg19social from '@/assets/img/19social.png'
+import rImg5graduation_reexam from '@/assets/img/5graduation_reexam.png'
+import rImg5english from '@/assets/img/5english.png'
 
 const initialCVState: Map<string, string[]> = new Map()
 
@@ -89,7 +93,8 @@ icon:github [github.com](https://github.com/)&nbsp;icon:gitee [gitee.com](https:
 自驱力强，对大前端有浓厚的兴趣，持续关注前端领域新玩具/新特性并投入项目使用，保持持续学习的心态`,
     primaryColor: '#140505',
     primaryBackground: '#140B25',
-    img: 'https://s1.imagehub.cc/images/2023/08/10/20.png',
+    // img: 'https://s1.imagehub.cc/images/2023/08/10/20.png',
+    img: rImg20campus_simple,
     hot: '666'
   },
   {
@@ -162,7 +167,7 @@ xxxx年xx月 - xxxx年xx月
 `,
     primaryColor: '#3A3939',
     primaryBackground: '#2186D2',
-    img: 'https://s1.imagehub.cc/images/2023/08/10/5ef200ce07ec45bcb.png',
+    img: rImg5graduation_reexam,
     hot: '233'
   },
   {
@@ -175,9 +180,9 @@ icon:email **邮箱**：xxx@163.com
 icon:phone **电话号码**：1234567899
 icon:work **工作经验**：3 年工作经验
 :::
-icon:link **博客**：https://coderlei.netlify.app
-icon:github **GitHub**：https://github.com/acmenlei
-icon:gitee **Gitee**：https://gitee.com/codeleilei
+icon:link **博客**：https://github.com
+icon:github **GitHub**：https://github.com
+icon:gitee **Gitee**：https://gitee.com
 ::: end
 
 ## 教育背景
@@ -220,7 +225,7 @@ https://github.com
 :::
 **2022.09 - 至今**
 ::: end
-这是一款使用 \`markdown\` 制作简历的工具，它可以将你编写的 \`markdown\` 简历转换为 \`PDF\`，支持多种模板，可扩展性极高，GitHub/Gitee icon:star 420+
+这是一款使用 \`markdown\` 制作简历的工具，它可以将你编写的 \`markdown\` 简历转换为 \`PDF\`，支持多种模板，可扩展性极高，GitHub/Gitee icon:star 0+
 
 ::: start
 icon:github  **markdown-plus**
@@ -249,7 +254,7 @@ https://github.com
 感谢您阅读我的简历，期待与您一起共事。`,
     primaryColor: '#544F4F',
     primaryBackground: '#1CAAB0',
-    img: 'https://s1.imagehub.cc/images/2023/08/10/19.png',
+    img: rImg19social,
     hot: '99'
   },
   {
@@ -323,7 +328,7 @@ https://github.com
 - **Interests**: Violin (Gr. 10). Website (coderlei.netlify.app)`,
     primaryColor: '#544F4F',
     primaryBackground: '#1CAAB0',
-    img: 'https://s1.imagehub.cc/images/2023/08/10/24.png',
+    img: rImg5english,
     hot: '8'
   }
 ]
@@ -345,7 +350,7 @@ https://github.com
 
 modulesData.forEach(content => {
   // const content = (data as Module).default
-  console.log(content)
+  // console.log(content)
   content.id = Math.ceil(Math.random() * 1000000000)
   templates.value.push(content)
   initialCVState.set(content.type, [
