@@ -13,7 +13,7 @@ export default `<h2 style="background:var(--background); color: var(--font-color
   >欢迎加入<strong>QQ群</strong>，一起学习语法，商量简历如何书写。</span
 >
 </p>
-<img width="200" src="imgUrl" alt="QQ群" />
+<img width="200" src="http://localhost:10088/jpg/qqgroup.jpg" alt="QQ群" />
 </div>
 <h2 style="background:var(--background); color: var(--font-color); margin: 20px 0 10px 0;">
 <span style="color: var(--font-color); background:(--background)">弹性布局</span>
