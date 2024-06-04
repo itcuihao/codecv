@@ -35,7 +35,7 @@ const { repoStars, createAnimateEffect } = useGiteeRepoStars()
       </div>
     </div>
 
-    <div class="user-comments noto-serif-sc">
+    <!-- <div class="user-comments noto-serif-sc">
       <div class="intro">
         <h1 data-aos="zoom-in">😍 来自用户的声音</h1>
         <p class="sub-intro" data-aos="zoom-in">
@@ -63,9 +63,9 @@ const { repoStars, createAnimateEffect } = useGiteeRepoStars()
           <sub class="line-1">{{ user.name }}</sub>
         </a>
         <br />
-        <!-- <a href="https://gitee.com/codeleilei/markdown2pdf/stargazers" target="_blank">...</a> -->
+        <a href="https://gitee.com/codeleilei/markdown2pdf/stargazers" target="_blank">...</a>
       </div>
-    </div>
+    </div> -->
 
     <div class="recent-template noto-serif-sc">
       <div class="intro">

@@ -30,7 +30,7 @@ const { open, toggle } = useSwitch()
     <el-tooltip content="返回上一页">
       <i class="iconfont icon-back font-20 hover" @click="$router.back()"></i>
     </el-tooltip>
-    <label for="resume-name-input">简历名称：</label>
+    <label id="header-title" for="resume-name-input">简历名称：</label>
     <input id="resume-name-input" type="text" v-model="fileName" />
     <nav-menu
       @export-md="exportFile('md')"
@@ -39,8 +39,8 @@ const { open, toggle } = useSwitch()
     />
     <ExportTotal />
     <Reward />
-    <button class="exporter server-export btn" @click="exportFile('dynamic')">导出PDF</button>
-    <button class="exporter local-export btn" @click="exportFile('native')">备用导出</button>
+    <!-- <button class="exporter server-export btn" @click="exportFile('dynamic')">导出PDF</button> -->
+    <button class="exporter local-export btn" @click="exportFile('native')">导出</button>
     <div class="operator">
       <el-tooltip content="问题反馈" placement="bottom-end">
         <i class="iconfont icon-wechat problem font-25" @click="toggle"></i>
@@ -67,6 +67,10 @@ const { open, toggle } = useSwitch()
   color: var(--font-color);
   background: var(--background);
   font-weight: 600;
+
+  #header-title {
+    font-size: 1.3rem;
+  }
 
   #resume-name-input {
     border: none;
